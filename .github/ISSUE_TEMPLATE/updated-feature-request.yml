@@ -3,7 +3,7 @@ description: For when you know better than me what you want
 title: "[Request]"
 labels: enhancement
 assignees:
-  - claunia
+  - mnadareski
 body: 
   - type: markdown
     attributes:
@@ -15,14 +15,15 @@ body:
         - Check [previous issues](https://github.com/SabreTools/MPF/issues) to see if any of those are related to what you're about to ask for.
         If none of those apply, then continue...
 
-  - type: input
-    id: related-to-problem
-    attributes:
-    label: Is your feature request related to a problem? Please describe.
   - type: textarea
-      id: description
+      id: related-to-problem
     attributes:
-      value: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+      label: Is your feature request related to a problem?
+      description: Please put a clear and concise description of what the problem is.
+      placeholder: Example: I'm always frustrated when [...]
+      value: Example: I'm always frustrated when [...]
+    validations:
+      required: true
 
 **Describe the solution you'd like**
 A clear and concise description of what you want to happen.
