@@ -297,3 +297,7 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# Whovian added
+.github/ISSUE_TEMPLATE/AARU_feature-request.yml
+AARU_feature-request.yml
