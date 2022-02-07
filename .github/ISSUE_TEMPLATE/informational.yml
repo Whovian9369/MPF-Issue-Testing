@@ -5,7 +5,7 @@ labels: question
 assignees:
   - mnadareski
 
-body: 
+body:
   - type: markdown
     attributes:
       value: |
