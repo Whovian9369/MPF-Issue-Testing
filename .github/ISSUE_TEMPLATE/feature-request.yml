@@ -20,7 +20,7 @@ body:
     attributes:
       label: Is your feature request related to a problem?
       description: Please put a clear and concise description of what the problem is.
-      placeholder: Example: I'm always frustrated when...
+      placeholder: "Example: I'm always frustrated when..."
     validations:
       required: true
 
@@ -29,7 +29,7 @@ body:
     attributes:
       label: Describe the solution you'd like
       description: Please put a clear and concise description of what you want to happen.
-      placeholder: Example: I think a solution to this could be...
+      placeholder: "Example: I think a solution to this could be..."
     validations:
       required: true
 
@@ -38,7 +38,7 @@ body:
     attributes:
       label: Describe alternatives you've considered
       description: Please put a clear and concise description of any alternative solutions or features you've considered.
-      placeholder: Example: Alternatives I've considered include...
+      placeholder: "Example: Alternatives I've considered include..."
     validations:
       required: true
 
@@ -47,6 +47,6 @@ body:
     attributes:
       label: Additional context
       description: Add any other context or screenshots about the feature request here.
-      placeholder: Example: We talked about this previously in VGPC, and...
+      placeholder: "Example: We talked about this previously in VGPC, and..."
     validations:
       required: true
