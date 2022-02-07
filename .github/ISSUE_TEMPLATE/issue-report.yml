@@ -31,6 +31,7 @@ body:
   - type: input
     id: version-num
     attributes:
+      label: Version number
       description: What version number are you using? 
       placeholder: "Example: 2.3, 2.2, 8740079, 45f79d9"
     validations:
@@ -58,7 +59,7 @@ body:
       required: true
 
   - type: textarea
-    id: describe
+    id: reproduce
     attributes:
       label: "How to reproduce the issue:"
       placeholder: "Example: If you do this, then that crashes!"
@@ -72,7 +73,7 @@ body:
       required: true
 
   - type: textarea
-    id: describe
+    id: expectation
     attributes:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.
