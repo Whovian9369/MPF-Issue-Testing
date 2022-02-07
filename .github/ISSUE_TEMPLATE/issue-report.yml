@@ -1,0 +1,90 @@
+name: Issue Report
+description: Tell me what's wrong, seriously
+title: "[Problem]"
+labels: bug
+assignees:
+  - mnadareski
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before You Submit**
+        - Remember to try the [latest WIP build](https://ci.appveyor.com/project/mnadareski/mpf/build/artifacts) to see if the issue has already been addressed.
+        - Is it copy protection related? If so, report the issue [here](https://github.com/mnadareski/BurnOutSharp/issues) instead.
+        - .NET Core 3.1 and .NET 5.0 have known issues, please try using another build to reproduce the error
+        - Check multiple discs to help narrow down the issue
+        - Check the Options to see if changing any of those affects your issue.
+        If all of those fail, then continue...
+
+  - type: checkboxes
+    id: version-type
+    attributes:
+      label: Version
+      description: What version are you using? 
+      options:
+        - label: Stable release 
+        - label: WIP release
+    validations:
+      required: true
+
+  - type: input
+    id: version-num
+    attributes:
+      description: What version number are you using? 
+      placeholder: "Example: 2.3, 2.2, 8740079, 45f79d9"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: net-version
+    attributes:
+      label: Version
+      description: What NET Runtime version are you using? 
+      options:
+        - .NET Framework 4.7.2 running on (Operating System)
+        - .NET Framework 4.8 running on (Operating System)
+        - .NET Core 3.1 running on (Operating System)
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: Please describe the issue
+      description: Please put a clear and concise description of what the bug is.
+      placeholder: "Example: MPF crashes :("
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: "How to reproduce the issue:"
+      placeholder: "Example: If you do this, then that crashes!"
+      value: |
+        Steps to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: "Example: This is what I thought would happen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any screenshots or other context about the feature request here.
+      placeholder: "Example: We talked about this previously in VGPC, and..."
+    validations:
+      required: false
