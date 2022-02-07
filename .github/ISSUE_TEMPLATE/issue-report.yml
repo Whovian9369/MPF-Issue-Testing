@@ -42,14 +42,14 @@ body:
       label: Version
       description: What NET Runtime version are you using? 
       options:
-        - label: ".NET Framework 4.7.2"
-        - label: ".NET Framework 4.8"
-        - label: ".NET Core 3.1"
+        - label: .NET Framework 4.7.2
+        - label: .NET Framework 4.8
+        - label: .NET Core 3.1
     validations:
       required: true
 
   - type: checkboxes
-    id: net-version
+    id: net-os
     attributes:
       label: Version
       description: What OS are you using? 
